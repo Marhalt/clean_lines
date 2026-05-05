@@ -108,8 +108,7 @@ def process(input_path: str) -> None:
         for src in txt_files:
             _process_one(src, out_dir / src.name)
     else:
-        out_path = path.parent / (path.stem + '_p' + path.suffix)
-        _process_one(path, out_path)
+        _process_one(path, path)
 
 
 if __name__ == '__main__':
